@@ -159,7 +159,7 @@
                         </label>
 			<label class="sheet-attr-input-label sheet-right-attr">
                             Defense
-                            <input class="sheet-attr-input-text defense" name="attr_defense" type="text" title="Defense = Passive+Active-Size, Passive = Body, Active = Dexterity" value="@{body}+@{dexterity}-@{size}" disabled="true" />
+                            <input class="sheet-attr-input-text defense" name="attr_defense" type="text" title="Defense = Passive+Active-Size" value="@{body}+@{dexterity}-@{size}" disabled="true" />
                             <button type="roll" class="sheet-roll-button" value="&{template:default} {{name=Defense}} {{Success=[[(@{defense}+@{mods})d2>2]]}} {{Average=[[((@{defense}+@{mods})%2)d2>2+[[floor((@{defense}+@{mods})/2)]]]]}} {{Modifier=@{mods}}}"></button>
                         </label>
                         <label class="sheet-attr-input-label sheet-right-attr">
