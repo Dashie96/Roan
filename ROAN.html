@@ -89,7 +89,7 @@
                     <div class="sheet-col sheet-collapse-margin">
                         <label class="sheet-attr-input-label sheet-attr-body">
                             Body
-                            <input class="sheet-attr-input-text body" name="attr_body" type="text" title="Resistance check" />
+                            <input class="sheet-attr-input-text body" name="attr_body" type="text" title="Resistance check"  />
                             <button type="roll" class="sheet-roll-button" name="roll_bodyroll" value="&{template:default} {{name=Body}} {{Successes=[[(@{body}*2+@{mods})d2>2]]}} {{Average=[[((@{body}*2+@{mods})%2)d2>2+[[floor((@{body}*2+@{mods})/2)]]]]}} {{Modifier=@{mods}}} "></button>
                         </label>
                         <label class="sheet-attr-input-label sheet-attr-dexterity">
@@ -132,29 +132,22 @@
                         </label>
                         <label class="sheet-attr-input-label">
                             Move
-                            <input class="sheet-attr-input-text" name="attr_move" type="text" title="Move = Strength + Dexterity" />
+                            <input class="sheet-attr-input-text" name="attr_move" type="text" title="Move = Strength + Dexterity" value="@{strength}+@{dexterity}" disabled="true" />
                             <span class="sheet-button-spacer"></span>
                         </label>
                         <label class="sheet-attr-input-label">
                             Perception
-                            <input class="sheet-attr-input-text perception" name="attr_perception" value="@{strength}+@{dexterity}" disabled="true" type="text" title="Perception = Intelligence + Willpower" />
+                            <input class="sheet-attr-input-text perception" name="attr_perception" type="text" title="Perception = Intelligence + Willpower" value="@{willpower}+@{intelligence}" disabled="true"/>
                             <button type="roll" class="sheet-roll-button" value="&{template:default} {{name=Perception}} {{Successes=[[(@{perception}+@{mods})d2>2]]}} {{Average=[[((@{perception}+@{mods})%2)d2>2+[[floor((@{perception}+@{mods})/2)]]]]}} {{Modifier=@{mods}}}"></button>
                         </label>
                     </div>
                     <div class="sheet-col sheet-collapse-margin">
                         <label class="sheet-attr-input-label sheet-right-attr">
                             Initiative
-                            <input class="sheet-attr-input-text initiative" name="attr_initiative" type="text" title="Initiative = Dexterity + Intelligence" />
+                            <input class="sheet-attr-input-text initiative" name="attr_initiative" type="text" title="Initiative = Dexterity + Intelligence" value="@{dexterity}+@{intelligence}" disabled="true"/>
                             <button type="roll" class="sheet-roll-button" value="&{template:default} {{name=Initiative}} {{Regular=[[@{initiative}d2>2 &{tracker}]]}} {{Continuous=[[10-@{initiative}d2>2]]}} "></button>
                         </label>
-                        <label class="sheet-attr-input-label sheet-right-attr">
-                            Defense
-                            <input class="sheet-attr-input-text defense" name="attr_defense" type="text" title="Defense = Passive+Active-Size, Passive = Body, Active = Dexterity" />
-                            <button type="roll" class="sheet-roll-button" value="&{template:default} {{name=Defense}} {{Success=[[(@{defense}+@{mods})d2>2]]}} {{Average=[[((@{defense}+@{mods})%2)d2>2+[[floor((@{defense}+@{mods})/2)]]]]}} {{Modifier=@{mods}}}"></button>
-                        </label>
-                    </div>
-                </div>
-					<label class="sheet-attr-input-label sheet-right-attr">
+			<label class="sheet-attr-input-label sheet-right-attr">
                             Defense
                             <input class="sheet-attr-input-text defense" name="attr_defense" type="text" title="Defense = Passive+Active-Size, Passive = Body, Active = Dexterity" />
                             <button type="roll" class="sheet-roll-button" value="&{template:default} {{name=Defense}} {{Success=[[(@{defense}+@{mods})d2>2]]}} {{Average=[[((@{defense}+@{mods})%2)d2>2+[[floor((@{defense}+@{mods})/2)]]]]}} {{Modifier=@{mods}}}"></button>
