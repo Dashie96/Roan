@@ -89,34 +89,34 @@
                     <div class="sheet-col sheet-collapse-margin">
                         <label class="sheet-attr-input-label sheet-attr-body">
                             Body
-                            <input class="sheet-attr-input-text body" name="attr_body" type="text" title="Resistance check"  />
+                            <input class="sheet-attr-input-text body" name="attr_body" type="text" title="Resistance check" value="1"  />
                             <button type="roll" class="sheet-roll-button" name="roll_bodyroll" value="&{template:default} {{name=Body}} {{Successes=[[(@{body}*2+@{mods})d2>2]]}} {{Average=[[((@{body}*2+@{mods})%2)d2>2+[[floor((@{body}*2+@{mods})/2)]]]]}} {{Modifier=@{mods}}} "></button>
                         </label>
                         <label class="sheet-attr-input-label sheet-attr-dexterity">
                             Dexterity
-                            <input class="sheet-attr-input-text dexterity" name="attr_dexterity" type="text" title="Balance check" />
+                            <input class="sheet-attr-input-text dexterity" name="attr_dexterity" type="text" title="Balance check" value="1" />
                             <button type="roll" class="sheet-roll-button" value="&{template:default} {{name=Dexterity}} {{Successes=[[(@{dexterity}*2+@{mods})d2>2]]}} {{Average=[[((@{dexterity}*2+@{mods})%2)d2>2+[[floor((@{dexterity}*2+@{mods})/2)]]]]}} {{Modifier=@{mods}}} "></button>
                         </label>
                         <label class="sheet-attr-input-label sheet-attr-strength">
                             Strength
-                            <input class="sheet-attr-input-text strength" name="attr_strength" type="text" title="Feats of strength check" />
+                            <input class="sheet-attr-input-text strength" name="attr_strength" type="text" title="Feats of strength check" value="1" />
                             <button type="roll" class="sheet-roll-button" value="&{template:default} {{name=Strength}} {{Successes=[[(@{strength}*2+@{mods})d2>2]]}} {{Average=[[((@{strength}*2+@{mods})%2)d2>2+[[floor((@{strength}*2+@{mods})/2)]]]]}} {{Modifier=@{mods}}} "></button>
                         </label>
                     </div>
                     <div class="sheet-col sheet-collapse-margin">
                         <label class="sheet-attr-input-label sheet-right-attr">
                             Charisma
-                            <input class="sheet-attr-input-text charisma" name="attr_charisma" type="text" title="Influence check" />
+                            <input class="sheet-attr-input-text charisma" name="attr_charisma" type="text" title="Influence check" value="1" />
                             <button type="roll" class="sheet-roll-button" value="&{template:default} {{name=Charisma}} {{Successes=[[(@{charisma}*2+@{mods})d2>2]]}} {{Average=[[((@{charisma}*2+@{mods})%2)d2>2+[[floor((@{charisma}*2+@{mods})/2)]]]]}} {{Modifier=@{mods}}} "></button>
                         </label>
                         <label class="sheet-attr-input-label sheet-right-attr">
                             Intelligence
-                            <input class="sheet-attr-input-text intelligence" name="attr_intelligence" type="text" title="Reason check" />
+                            <input class="sheet-attr-input-text intelligence" name="attr_intelligence" type="text" title="Reason check" value="1" />
                             <button type="roll" class="sheet-roll-button" value="&{template:default} {{name=Intelligence}} {{Successes=[[(@{intelligence}*2+@{mods})d2>2]]}} {{Average=[[((@{intelligence}*2+@{mods})%2)d2>2+[[floor((@{intelligence}*2+@{mods})/2)]]]]}} {{Modifier=@{mods}}} "></button>
                         </label>
                         <label class="sheet-attr-input-label sheet-right-attr">
                             Willpower
-                            <input class="sheet-attr-input-text willpower" name="attr_willpower" type="text" title="Courage check" />
+                            <input class="sheet-attr-input-text willpower" name="attr_willpower" type="text" title="Courage check" value="1" />
                             <button type="roll" class="sheet-roll-button" value="&{template:default} {{name=Willpower}} {{Successes=[[(@{willpower}*2+@{mods})d2>2]]}} {{Average=[[((@{willpower}*2+@{mods})%2)d2>2+[[floor((@{willpower}*2+@{mods})/2)]]]]}} {{Modifier=@{mods}}} "></button>
                         </label>
                     </div>
