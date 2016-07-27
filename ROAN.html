@@ -140,6 +140,11 @@
                             <input class="sheet-attr-input-text perception" name="attr_perception" type="text" title="Perception = Intelligence + Willpower" value="@{willpower}+@{intelligence}" disabled="true"/>
                             <button type="roll" class="sheet-roll-button" value="&{template:default} {{name=Perception}} {{Successes=[[(@{perception}+@{mods})d2>2]]}} {{Average=[[((@{perception}+@{mods})%2)d2>2+[[floor((@{perception}+@{mods})/2)]]]]}} {{Modifier=@{mods}}}"></button>
                         </label>
+                        <label class="sheet-attr-input-label ">
+                            Passive Defense
+                            <input class="sheet-attr-input-text defense" name="attr_passive_defense" type="text" title="Passive = Body" value="@{body}" disabled="true" />
+                            <button type="roll" class="sheet-roll-button" value="&{template:default} {{name=Passive_defense}} {{Success=[[(@{passive_defense}+@{mods})d2>2]]}} {{Average=[[((@{passive_defense}+@{mods})%2)d2>2+[[floor((@{passive_defense}+@{mods})/2)]]]]}} {{Modifier=@{mods}}}"></button>
+                        </label>
                     </div>
                     <div class="sheet-col sheet-collapse-margin">
                         <label class="sheet-attr-input-label sheet-right-attr">
@@ -147,10 +152,20 @@
                             <input class="sheet-attr-input-text initiative" name="attr_initiative" type="text" title="Initiative = Dexterity + Intelligence" value="@{dexterity}+@{intelligence}" disabled="true"/>
                             <button type="roll" class="sheet-roll-button" value="&{template:default} {{name=Initiative}} {{Regular=[[@{initiative}d2>2 &{tracker}]]}} {{Continuous=[[10-@{initiative}d2>2]]}} "></button>
                         </label>
+                        <label class="sheet-attr-input-label sheet-right-attr">
+                            Magic Defense
+                            <input class="sheet-attr-input-text defense" name="attr_magic_defense" type="text" title="Magic Defense = Willpower" value="@{willpower}" disabled="true" />
+                            <button type="roll" class="sheet-roll-button" value="&{template:default} {{name= Magic_defense}} {{Success=[[(@{magic_defense}+@{mods})d2>2]]}} {{Average=[[((@{magic_defense}+@{mods})%2)d2>2+[[floor((@{magic_defense}+@{mods})/2)]]]]}} {{Modifier=@{mods}}}"></button>
+                        </label>
 			<label class="sheet-attr-input-label sheet-right-attr">
                             Defense
-                            <input class="sheet-attr-input-text defense" name="attr_defense" type="text" title="Defense = Passive+Active-Size, Passive = Body, Active = Dexterity" />
+                            <input class="sheet-attr-input-text defense" name="attr_defense" type="text" title="Defense = Passive+Active-Size, Passive = Body, Active = Dexterity" value="@{body}+@{dexterity}-@{size}" disabled="true" />
                             <button type="roll" class="sheet-roll-button" value="&{template:default} {{name=Defense}} {{Success=[[(@{defense}+@{mods})d2>2]]}} {{Average=[[((@{defense}+@{mods})%2)d2>2+[[floor((@{defense}+@{mods})/2)]]]]}} {{Modifier=@{mods}}}"></button>
+                        </label>
+                        <label class="sheet-attr-input-label sheet-right-attr">
+                            Active Defense
+                            <input class="sheet-attr-input-text defense" name="attr_Active_defense" type="text" title="Active = Dexterity" value="@{dexterity}" disabled="true" />
+                            <button type="roll" class="sheet-roll-button" value="&{template:default} {{name=Active_defense}} {{Success=[[(@{active_defense}+@{mods})d2>2]]}} {{Average=[[((@{active_defense}+@{mods})%2)d2>2+[[floor((@{active_defense}+@{mods})/2)]]]]}} {{Modifier=@{mods}}}"></button>
                         </label>
                     </div>
                 </div>
