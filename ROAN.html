@@ -26,16 +26,16 @@
                         setAttrs({ enclight: 500, encmedium: 750, encheavy: 1000 });
                         break;
                     case "7":
-                    	setAttrs({ enclight: 750, encmedium: 1000, encheavy: 1250});
+                    	setAttrs({ enclight: 750, encmedium: 1000, encheavy: 1250 });
                     	break;
                     case "8":
-                    	setAttrs({ enclight: 1000, encmedium 1250, encheavy: 1500});
+                    	setAttrs({ enclight: 1000, encmedium 1250, encheavy: 1500 });
                     	break;
                     case "9":
-                    	setAttrs({ enclight: 1250, encmedium 1500, encheavy: 1750});
+                    	setAttrs({ enclight: 1250, encmedium 1500, encheavy: 1750 });
                     	break;
                     case "10":
-                    	setAttrs({ enclight: 1500, encmedium 1750, encheavy: 2000});
+                    	setAttrs({ enclight: 1500, encmedium 1750, encheavy: 2000 });
                     	break;
                     default:
                         setAttrs({ enclight: 0, encmedium: 0, encheavy: 0 });
@@ -102,34 +102,34 @@
                         <label class="sheet-attr-input-label sheet-attr-body">
                             Body
                             <input class="sheet-attr-input-text body" name="attr_body" type="text" title="Resistance check" value="1"  />
-                            <button type="roll" class="sheet-roll-button" name="roll_bodyroll" value="&{template:default} {{name=Body}} {{Successes=[[(@{body}*2+@{mods})d2>2]]}} {{Average=[[((@{body}*2+@{mods})%2)d2>2+[[floor((@{body}*2+@{mods})/2)]]]]}} {{Modifier=@{mods}}} "></button>
+                            <button type="roll" class="sheet-roll-button" name="roll_bodyroll" value="&{template:pf_generic} {{name=Body}} {{Successes=[[(@{body}*2+@{mods})d2>2]]}} {{Average=[[((@{body}*2+@{mods})%2)d2>2+[[floor((@{body}*2+@{mods})/2)]]]]}} {{Modifier=@{mods}}} "></button>
                         </label>
                         <label class="sheet-attr-input-label sheet-attr-dexterity">
                             Dexterity
                             <input class="sheet-attr-input-text dexterity" name="attr_dexterity" type="text" title="Balance check" value="1" />
-                            <button type="roll" class="sheet-roll-button" value="&{template:default} {{name=Dexterity}} {{Successes=[[(@{dexterity}*2+@{mods})d2>2]]}} {{Average=[[((@{dexterity}*2+@{mods})%2)d2>2+[[floor((@{dexterity}*2+@{mods})/2)]]]]}} {{Modifier=@{mods}}} "></button>
+                            <button type="roll" class="sheet-roll-button" value="&{template:pf_generic} {{name=Dexterity}} {{Successes=[[(@{dexterity}*2+@{mods})d2>2]]}} {{Average=[[((@{dexterity}*2+@{mods})%2)d2>2+[[floor((@{dexterity}*2+@{mods})/2)]]]]}} {{Modifier=@{mods}}} "></button>
                         </label>
                         <label class="sheet-attr-input-label sheet-attr-strength">
                             Strength
                             <input class="sheet-attr-input-text strength" name="attr_strength" type="text" title="Feats of strength check" value="1" />
-                            <button type="roll" class="sheet-roll-button" value="&{template:default} {{name=Strength}} {{Successes=[[(@{strength}*2+@{mods})d2>2]]}} {{Average=[[((@{strength}*2+@{mods})%2)d2>2+[[floor((@{strength}*2+@{mods})/2)]]]]}} {{Modifier=@{mods}}} "></button>
+                            <button type="roll" class="sheet-roll-button" value="&{template:pf_generic} {{name=Strength}} {{Successes=[[(@{strength}*2+@{mods})d2>2]]}} {{Average=[[((@{strength}*2+@{mods})%2)d2>2+[[floor((@{strength}*2+@{mods})/2)]]]]}} {{Modifier=@{mods}}} "></button>
                         </label>
                     </div>
                     <div class="sheet-col sheet-collapse-margin">
                         <label class="sheet-attr-input-label sheet-right-attr">
                             Charisma
                             <input class="sheet-attr-input-text charisma" name="attr_charisma" type="text" title="Influence check" value="1" />
-                            <button type="roll" class="sheet-roll-button" value="&{template:default} {{name=Charisma}} {{Successes=[[(@{charisma}*2+@{mods})d2>2]]}} {{Average=[[((@{charisma}*2+@{mods})%2)d2>2+[[floor((@{charisma}*2+@{mods})/2)]]]]}} {{Modifier=@{mods}}} "></button>
+                            <button type="roll" class="sheet-roll-button" value="&{template:pf_generic} {{name=Charisma}} {{Successes=[[(@{charisma}*2+@{mods})d2>2]]}} {{Average=[[((@{charisma}*2+@{mods})%2)d2>2+[[floor((@{charisma}*2+@{mods})/2)]]]]}} {{Modifier=@{mods}}} "></button>
                         </label>
                         <label class="sheet-attr-input-label sheet-right-attr">
                             Intelligence
                             <input class="sheet-attr-input-text intelligence" name="attr_intelligence" type="text" title="Reason check" value="1" />
-                            <button type="roll" class="sheet-roll-button" value="&{template:default} {{name=Intelligence}} {{Successes=[[(@{intelligence}*2+@{mods})d2>2]]}} {{Average=[[((@{intelligence}*2+@{mods})%2)d2>2+[[floor((@{intelligence}*2+@{mods})/2)]]]]}} {{Modifier=@{mods}}} "></button>
+                            <button type="roll" class="sheet-roll-button" value="&{template:pf_generic} {{name=Intelligence}} {{Successes=[[(@{intelligence}*2+@{mods})d2>2]]}} {{Average=[[((@{intelligence}*2+@{mods})%2)d2>2+[[floor((@{intelligence}*2+@{mods})/2)]]]]}} {{Modifier=@{mods}}} "></button>
                         </label>
                         <label class="sheet-attr-input-label sheet-right-attr">
                             Willpower
                             <input class="sheet-attr-input-text willpower" name="attr_willpower" type="text" title="Courage check" value="1" />
-                            <button type="roll" class="sheet-roll-button" value="&{template:default} {{name=Willpower}} {{Successes=[[(@{willpower}*2+@{mods})d2>2]]}} {{Average=[[((@{willpower}*2+@{mods})%2)d2>2+[[floor((@{willpower}*2+@{mods})/2)]]]]}} {{Modifier=@{mods}}} "></button>
+                            <button type="roll" class="sheet-roll-button" value="&{template:pf_generic} {{name=Willpower}} {{Successes=[[(@{willpower}*2+@{mods})d2>2]]}} {{Average=[[((@{willpower}*2+@{mods})%2)d2>2+[[floor((@{willpower}*2+@{mods})/2)]]]]}} {{Modifier=@{mods}}} "></button>
                         </label>
                     </div>
                 </div>
@@ -150,34 +150,34 @@
                         <label class="sheet-attr-input-label">
                             Perception
                             <input class="sheet-attr-input-text perception" name="attr_perception" type="text" title="Perception = Intelligence + Willpower" value="@{willpower}+@{intelligence}" disabled="true"/>
-                            <button type="roll" class="sheet-roll-button" value="&{template:default} {{name=Perception}} {{Successes=[[(@{perception}+@{mods})d2>2]]}} {{Average=[[((@{perception}+@{mods})%2)d2>2+[[floor((@{perception}+@{mods})/2)]]]]}} {{Modifier=@{mods}}}"></button>
+                            <button type="roll" class="sheet-roll-button" value="&{template:pf_generic} {{name=Perception}} {{Successes=[[(@{perception}+@{mods})d2>2]]}} {{Average=[[((@{perception}+@{mods})%2)d2>2+[[floor((@{perception}+@{mods})/2)]]]]}} {{Modifier=@{mods}}}"></button>
                         </label>
                         <label class="sheet-attr-input-label ">
                             Passive Defense
                             <input class="sheet-attr-input-text defense" name="attr_passive_defense" type="text" title="Passive = Body" value="@{body}" disabled="true" />
-                            <button type="roll" class="sheet-roll-button" value="&{template:default} {{name=Passive_defense}} {{Success=[[(@{passive_defense}+@{mods})d2>2]]}} {{Average=[[((@{passive_defense}+@{mods})%2)d2>2+[[floor((@{passive_defense}+@{mods})/2)]]]]}} {{Modifier=@{mods}}}"></button>
+                            <button type="roll" class="sheet-roll-button" value="&{template:pf_generic} {{name=Passive_defense}} {{Success=[[(@{passive_defense}+@{mods})d2>2]]}} {{Average=[[((@{passive_defense}+@{mods})%2)d2>2+[[floor((@{passive_defense}+@{mods})/2)]]]]}} {{Modifier=@{mods}}}"></button>
                         </label>
                     </div>
                     <div class="sheet-col sheet-collapse-margin">
                         <label class="sheet-attr-input-label sheet-right-attr">
                             Initiative
                             <input class="sheet-attr-input-text initiative" name="attr_initiative" type="text" title="Initiative = Dexterity + Intelligence" value="@{dexterity}+@{intelligence}" disabled="true"/>
-                            <button type="roll" class="sheet-roll-button" value="&{template:default} {{name=Initiative}} {{Regular=[[@{initiative}d2>2 &{tracker}]]}} {{Continuous=[[10-@{initiative}d2>2]]}} "></button>
+                            <button type="roll" class="sheet-roll-button" value="&{template:pf_generic} {{name=Initiative}} {{Regular=[[@{initiative}d2>2 &{tracker}]]}} {{Continuous=[[10-@{initiative}d2>2]]}} "></button>
                         </label>
                         <label class="sheet-attr-input-label sheet-right-attr">
                             Magic Defense
                             <input class="sheet-attr-input-text defense" name="attr_magic_defense" type="text" title="Magic Defense = Willpower" value="@{willpower}" disabled="true" />
-                            <button type="roll" class="sheet-roll-button" value="&{template:default} {{name= Magic_defense}} {{Success=[[(@{magic_defense}+@{mods})d2>2]]}} {{Average=[[((@{magic_defense}+@{mods})%2)d2>2+[[floor((@{magic_defense}+@{mods})/2)]]]]}} {{Modifier=@{mods}}}"></button>
+                            <button type="roll" class="sheet-roll-button" value="&{template:pf_generic} {{name= Magic_defense}} {{Success=[[(@{magic_defense}+@{mods})d2>2]]}} {{Average=[[((@{magic_defense}+@{mods})%2)d2>2+[[floor((@{magic_defense}+@{mods})/2)]]]]}} {{Modifier=@{mods}}}"></button>
                         </label>
 			<label class="sheet-attr-input-label sheet-right-attr">
                             Defense
                             <input class="sheet-attr-input-text defense" name="attr_defense" type="text" title="Defense = Passive+Active-Size" value="@{body}+@{dexterity}-@{size}" disabled="true" />
-                            <button type="roll" class="sheet-roll-button" value="&{template:default} {{name=Defense}} {{Success=[[(@{defense}+@{mods})d2>2]]}} {{Average=[[((@{defense}+@{mods})%2)d2>2+[[floor((@{defense}+@{mods})/2)]]]]}} {{Modifier=@{mods}}}"></button>
+                            <button type="roll" class="sheet-roll-button" value="&{template:pf_generic} {{name=Defense}} {{Success=[[(@{defense}+@{mods})d2>2]]}} {{Average=[[((@{defense}+@{mods})%2)d2>2+[[floor((@{defense}+@{mods})/2)]]]]}} {{Modifier=@{mods}}}"></button>
                         </label>
                         <label class="sheet-attr-input-label sheet-right-attr">
                             Active Defense
                             <input class="sheet-attr-input-text defense" name="attr_Active_defense" type="text" title="Active = Dexterity" value="@{dexterity}" disabled="true" />
-                            <button type="roll" class="sheet-roll-button" value="&{template:default} {{name=Active_defense}} {{Success=[[(@{active_defense}+@{mods})d2>2]]}} {{Average=[[((@{active_defense}+@{mods})%2)d2>2+[[floor((@{active_defense}+@{mods})/2)]]]]}} {{Modifier=@{mods}}}"></button>
+                            <button type="roll" class="sheet-roll-button" value="&{template:pf_generic} {{name=Active_defense}} {{Success=[[(@{active_defense}+@{mods})d2>2]]}} {{Average=[[((@{active_defense}+@{mods})%2)d2>2+[[floor((@{active_defense}+@{mods})/2)]]]]}} {{Modifier=@{mods}}}"></button>
                         </label>
                     </div>
                 </div>
@@ -209,7 +209,7 @@
                             <input type="text" name="attr_skillaverage" class="sheet-free-input skillsaverage" readonly="readonly" />
                         </div>
                         <div class="sheet-skill-roll">
-                            <button type="roll" value="&{template:default} {{name=@{skillname}}} {{Successes=[[(@{skillrating}+@{mods})d2>2]]}} {{Average=[[((@{skillrating}+@{mods})%2)d2>2+[[floor((@{skillrating}+@{mods})/2)]]]]}} {{Modifier=@{mods}}} "></button>
+                            <button type="roll" value="&{template:pf_generic} {{name=@{skillname}}} {{Successes=[[(@{skillrating}+@{mods})d2>2]]}} {{Average=[[((@{skillrating}+@{mods})%2)d2>2+[[floor((@{skillrating}+@{mods})/2)]]]]}} {{Modifier=@{mods}}} "></button>
                         </div>
                     </fieldset>
                     <p class="sheet-footnote">* specialized skill</p>
@@ -239,7 +239,7 @@
                                 <span>(Avg)</span>
                             </div>
                             <div class="sheet-weapon-roll">
-                                <button type="roll" value="&{template:default} {{name=@{weaponname}}} {{Successes=[[(@{weaponattack}+@{mods})d2>2]]}} {{Average=[[((@{weaponattack}+@{mods})%2)d2>2+[[floor((@{weaponattack}+@{mods})/2)]]]]}} {{Modifier=@{mods}}}"></button>
+                                <button type="roll" value="&{template:pf_generic} {{name=@{weaponname}}} {{Successes=[[(@{weaponattack}+@{mods})d2>2]]}} {{Average=[[((@{weaponattack}+@{mods})%2)d2>2+[[floor((@{weaponattack}+@{mods})/2)]]]]}} {{Modifier=@{mods}}}"></button>
                             </div>
                         </div>
                         <div class="sheet-weapon-row-2">
@@ -388,5 +388,97 @@
                 <input type="checkbox" name="attr_mods" value="?{Dice Pool Modifier|0}" checked /> On
             </label>
         </div>
-        
+        -        <!-- Generic Roll Templates -->
+ -	<rolltemplate class="sheet-rolltemplate-pf_generic">
+ -		{{^accessible}}
+ -		<div class="sheet-roll-table sheet-roll-color sheet-rolltemplate-pf_generic {{#color}}color-{{color}}{{/color}} {{#rounded}}rounded{{/rounded}}">
+ -			<div class="sheet-roll-header">
+ -				<span class="sheet-left">
+ -					{{#character_name}}
+ -					{{#character_id}}[{{character_name}}](https://journal.roll20.net/character/{{character_id}}){{/character_id}}
+ -					{{^character_id}}{{character_name}}{{/character_id}}
+ -					{{#name}}:{{/name}}
+ -					{{/character_name}}
+ -					{{#name}}
+ -					{{#name_link}}[{{name}}]({{name_link}}){{/name_link}}
+ -					{{^name_link}}{{name}}{{/name_link}}
+ -					{{/name}}
+ -				</span>
+ -				{{#header_image}}<span class="sheet-header-image">{{header_image}}</span>{{/header_image}}
+ -				{{#subtitle}}<span class="sheet-subtitle">{{subtitle}}</span>{{/subtitle}}
+ -			</div>
+ -			
+ -			<div class="sheet-roll-group">
+ -				{{#lefttext_1}}<div class="sheet-roll-row"><div class="sheet-roll-cell">{{lefttext_1}}</div></div>{{/lefttext_1}}
+ -				{{#righttext_1}}<div class="sheet-roll-row"><div class="sheet-roll-cell sheet-right">{{righttext_1}}</div></div>{{/righttext_1}}
+ -				{{#lefttext_2}}<div class="sheet-roll-row"><div class="sheet-roll-cell">{{lefttext_2}}</div></div>{{/lefttext_2}}
+ -				{{#righttext_2}}<div class="sheet-roll-row"><div class="sheet-roll-cell sheet-right">{{righttext_2}}</div></div>{{/righttext_2}}
+ -				{{#lefttext_3}}<div class="sheet-roll-row"><div class="sheet-roll-cell">{{lefttext_3}}</div></div>{{/lefttext_3}}
+ -				{{#righttext_3}}<div class="sheet-roll-row"><div class="sheet-roll-cell sheet-right">{{righttext_3}}</div></div>{{/righttext_3}}
+ -				{{#lefttext_4}}<div class="sheet-roll-row"><div class="sheet-roll-cell">{{lefttext_4}}</div></div>{{/lefttext_4}}
+ -				{{#righttext_4}}<div class="sheet-roll-row"><div class="sheet-roll-cell sheet-right">{{righttext_4}}</div></div>{{/righttext_4}}
+ -				{{#lefttext_5}}<div class="sheet-roll-row"><div class="sheet-roll-cell">{{lefttext_5}}</div></div>{{/lefttext_5}}
+ -				{{#righttext_5}}<div class="sheet-roll-row"><div class="sheet-roll-cell sheet-right">{{righttext_5}}</div></div>{{/righttext_5}}
+ -			</div>
+ -			
+ -			<div style="display:table;width:100%;">
+ -				<div class="sheet-roll-group2">
+ -				{{#allprops() color accessible rounded header_image character_name character_id name_link subtitle init_notes description righttext_1 lefttext_1 righttext_2 lefttext_2 righttext_3 lefttext_3 righttext_4 lefttext_4 righttext_5 lefttext_5 righttext_6 lefttext_6 righttext_7 lefttext_7 righttext_8 lefttext_8 righttext_9 lefttext_9 righttext_10 lefttext_10 }}
+ -				<div class="sheet-roll-row"><div class="sheet-roll-cell">**{{key}}**</div><div class="sheet-roll-cell">{{value}}</div></div>
+ -				{{/allprops() color accessible rounded header_image character_name character_id name_link subtitle init_notes description righttext_1 lefttext_1 righttext_2 lefttext_2 righttext_3 lefttext_3 righttext_4 lefttext_4 righttext_5 lefttext_5 righttext_6 lefttext_6 righttext_7 lefttext_7 righttext_8 lefttext_8 righttext_9 lefttext_9 righttext_10 lefttext_10 }}
+ -				</div>
+ -			</div>
+ -			
+ -			<div class="sheet-roll-group">
+ -
+ -				{{#lefttext_6}}<div class="sheet-roll-row"><div class="sheet-roll-cell">{{lefttext_6}}</div></div>{{/lefttext_6}}
+ -				{{#righttext_6}}<div class="sheet-roll-row"><div class="sheet-roll-cell sheet-right">{{righttext_6}}</div></div>{{/righttext_6}}
+ -				{{#lefttext_7}}<div class="sheet-roll-row"><div class="sheet-roll-cell">{{lefttext_7}}</div></div>{{/lefttext_7}}
+ -				{{#righttext_7}}<div class="sheet-roll-row"><div class="sheet-roll-cell sheet-right">{{righttext_7}}</div></div>{{/righttext_7}}
+ -				{{#lefttext_8}}<div class="sheet-roll-row"><div class="sheet-roll-cell">{{lefttext_8}}</div></div>{{/lefttext_8}}
+ -				{{#righttext_8}}<div class="sheet-roll-row"><div class="sheet-roll-cell sheet-right">{{righttext_8}}</div></div>{{/righttext_8}}
+ -				{{#lefttext_9}}<div class="sheet-roll-row"><div class="sheet-roll-cell">{{lefttext_9}}</div></div>{{/lefttext_9}}
+ -				{{#righttext_9}}<div class="sheet-roll-row"><div class="sheet-roll-cell sheet-right">{{righttext_9}}</div></div>{{/righttext_9}}
+ -				{{#lefttext_10}}<div class="sheet-roll-row"><div class="sheet-roll-cell">{{lefttext_10}}</div></div>{{/lefttext_10}}
+ -				{{#righttext_10}}<div class="sheet-roll-row"><div class="sheet-roll-cell sheet-right">{{righttext_10}}</div></div>{{/righttext_10}}
+ -
+ -				{{#description}}<div class="sheet-roll-row"><div class="sheet-roll-cell">{{description}}</div></div>{{/description}}
+ -			</div>
+ -		</div>
+ -		{{/accessible}}
+ -		{{#accessible}}
+ -		<div class="sheet-roll-accessible sheet-roll-color {{#color}}color-{{color}}{{/color}}">
+ -			<h3 class="sheet-roll-header">
+ -				{{#character_name}}{{character_name}}{{#name}}: {{/name}}{{/character_name}}
+ -				{{#name}}{{name}}{{/name}}
+ -			</h3>
+ -			{{#subtitle}}<h4>{{subtitle}}</h4>{{/subtitle}}
+ -			{{#lefttext_1}}<label><span>{{lefttext_1}}</span></label>{{/lefttext_1}}
+ -			{{#righttext_1}}<label><span class="sheet-right">{{righttext_1}}</span></label>{{/righttext_1}}
+ -			{{#lefttext_2}}<label><span>{{lefttext_2}}</span></label>{{/lefttext_2}}
+ -			{{#righttext_2}}<label><span class="sheet-right">{{righttext_2}}</span></label>{{/righttext_2}}
+ -			{{#lefttext_3}}<label><span>{{lefttext_3}}</span></label>{{/lefttext_3}}
+ -			{{#righttext_3}}<label><span class="sheet-right">{{righttext_3}}</span></label>{{/righttext_3}}
+ -			{{#lefttext_4}}<label><span>{{lefttext_4}}</span></label>{{/lefttext_4}}
+ -			{{#righttext_4}}<label><span class="sheet-right">{{righttext_4}}</span></label>{{/righttext_4}}
+ -			{{#lefttext_5}}<label><span>{{lefttext_5}}</span></label>{{/lefttext_5}}
+ -			{{#righttext_5}}<label><span class="sheet-right">{{righttext_5}}</span></label>{{/righttext_5}}
+ -			{{#allprops() color accessible rounded header_image character_name character_id name_link subtitle init_notes description righttext_1 lefttext_1 righttext_2 lefttext_2 righttext_3 lefttext_3 righttext_4 lefttext_4 righttext_5 lefttext_5 righttext_6 lefttext_6 righttext_7 lefttext_7 righttext_8 lefttext_8 righttext_9 lefttext_9 righttext_10 lefttext_10 }}
+ -			<label><span>**{{key}}**</span><span class="sheet-right">{{value}}</span></label>
+ -			{{/allprops() color accessible rounded header_image character_name character_id name_link subtitle init_notes description righttext_1 lefttext_1 righttext_2 lefttext_2 righttext_3 lefttext_3 righttext_4 lefttext_4 righttext_5 lefttext_5 righttext_6 lefttext_6 righttext_7 lefttext_7 righttext_8 lefttext_8 righttext_9 lefttext_9 righttext_10 lefttext_10 }}
+ -			{{#lefttext_6}}<label><span>{{lefttext_6}}</span></label>{{/lefttext_6}}
+ -			{{#righttext_6}}<label><span class="sheet-right">{{righttext_6}}</span></label>{{/righttext_6}}
+ -			{{#lefttext_7}}<label><span>{{lefttext_7}}</span></label>{{/lefttext_7}}
+ -			{{#righttext_7}}<label><span class="sheet-right">{{righttext_7}}</span></label>{{/righttext_7}}
+ -			{{#lefttext_8}}<label><span>{{lefttext_8}}</span></label>{{/lefttext_8}}
+ -			{{#righttext_8}}<label><span class="sheet-right">{{righttext_8}}</span></label>{{/righttext_8}}
+ -			{{#lefttext_9}}<label><span>{{lefttext_9}}</span></label>{{/lefttext_9}}
+ -			{{#righttext_9}}<label><span class="sheet-right">{{righttext_9}}</span></label>{{/righttext_9}}
+ -			{{#lefttext_10}}<label><span>{{lefttext_10}}</span></label>{{/lefttext_10}}
+ -			{{#righttext_10}}<label><span class="sheet-right">{{righttext_10}}</span></label>{{/righttext_10}}
+ -
+ -			{{#description}}<h4 data-i18n="description">Description</h4><span>{{description}}</span>{{/description}}
+ -		</div>
+ -		{{/accessible}}
+ -	</rolltemplate>
     </div>
