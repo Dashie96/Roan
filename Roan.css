@@ -131,11 +131,11 @@
       margin-right: 2rem; }
     .sheet-hex .sheet-attr-input-label.sheet-attr-body, .sheet-hex .sheet-attr-body.sheet-side-input-label {
       float: right;
-      width: 78%; }
+      width: 100%; }
     .sheet-hex .sheet-attr-input-label.sheet-attr-dexterity, .sheet-hex .sheet-attr-dexterity.sheet-side-input-label {
       float: right;
       margin: 0 0 0.3rem 0;
-      width: 93%; }
+      width: 100%; }
     .sheet-hex .sheet-attr-input-label.sheet-attr-strength, .sheet-hex .sheet-attr-strength.sheet-side-input-label {
       float: right;
       margin: 0 0 0.3rem 0;
