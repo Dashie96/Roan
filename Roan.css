@@ -22,7 +22,6 @@
       border-top-left-radius: 3rem;
       border-top-right-radius: 3rem;
       text-align: center;
-      width: 72%; 
       }
   .sheet-hex input[type="text"], .sheet-hex input[type="number"] {
     border-radius: 0;
