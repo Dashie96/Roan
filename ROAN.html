@@ -186,7 +186,7 @@
                     <div class="sheet-col sheet-collapse-margin">
                         <label class="sheet-attr-input-label">
                             Current
-                            <input type="number" step="1" name="attr_current" class="sheet-style-input-number" />
+                            <input type="number" step="1" max="@{health_max}" name="attr_current" class="sheet-style-input-number" />
                             <span class="sheet-button-spacer"></span>
                         </label>
                         <label class="sheet-attr-input-label">
@@ -201,7 +201,7 @@
                     <div class="sheet-col sheet-collapse-margin">
                         <label class="sheet-attr-input-label sheet-right-attr">
                             Maximum
-                            <input type="text" name="attr_health_max" class="sheet-wider-input-text" title="Health = Body + Willpower + Size" value="@{body}+@{willpower}+@{size}" disabled="true" />
+                            <input type="text" name="attr_health_max" title="Health = Body + Willpower + Size" value="@{body}+@{willpower}+@{size}" disabled="true" />
                             <span class="sheet-button-spacer"></span>
                             </label>
                         <label class="sheet-attr-input-label sheet-right-attr">
