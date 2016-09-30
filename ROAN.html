@@ -233,10 +233,10 @@
                             <input type="text" name="attr_skilllevel" class="sheet-free-input" />
                         </div>
                         <div class="sheet-skill-rating">
-                            <input type="text" name="attr_skillrating" class="sheet-free-input skillrating" />
+                            <input type="text" name="attr_skillrating" class="sheet-free-input skillrating" readonly="readonly" value=(@{skillbase} + @{skillrating}) />
                         </div>
                         <div class="sheet-skill-avg">
-                            <input type="text" name="attr_skillaverage" class="sheet-free-input skillsaverage" readonly="readonly" />
+                            <input type="text" name="attr_skillaverage" class="sheet-free-input skillsaverage" readonly="readonly" value=((@{skillbase} + @{skillrating})%2) />
                         </div>
                         <div class="sheet-skill-roll">
                             <button type="roll" value="&{template:default} {{name=@{skillname}}} {{Successes=[[(@{skillrating}+@{mods})d2>2]]}} {{Average=[[((@{skillrating}+@{mods})%2)d2>2+[[floor((@{skillrating}+@{mods})/2)]]]]}} {{Modifier=@{mods}}} "></button>
